@@ -7,7 +7,7 @@ st.set_page_config(page_title="🍽️ Restaurant Recommendation App", layout="w
 # Load dataset with caching
 @st.cache_data
 def load_data():
-    data = pd.read_csv(r'C:\Users\admin\Music\Guvi\Swiggy\swiggy_final.csv')
+    data = pd.read_csv("swiggy_final.csv")
     # Ensure rating is float for slider filtering
     data['rating'] = pd.to_numeric(data['rating'], errors='coerce').fillna(0)
     return data
