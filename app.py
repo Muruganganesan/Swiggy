@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Restaurant Recommendation App", layout="wide")
+st.set_page_config(page_title="Hotel Recommendation App", layout="wide")
 
 import pandas as pd
 
@@ -55,4 +55,4 @@ if not filtered_df.empty:
 
 # Footer
 st.markdown("---")
-st.caption("Powered by Streamlit | Data from Swiggy")
+st.caption("Powered by Murugan | Data from Swiggy")
