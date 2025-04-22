@@ -101,6 +101,6 @@ if not filtered_df.empty:
 
 # Footer
 st.markdown("---")
-st.caption("Powered by Data from Swiggy")
+st.caption("Powered by Murugan Data from Swiggy")
 
 #"C:\Users\admin\Music\Guvi\Swiggy\1.Swiggy.py"
