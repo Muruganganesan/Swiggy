@@ -7,7 +7,7 @@ import pandas as pd
 # Load dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv(r'C:\Users\admin\Music\Guvi\Swiggy\swiggy_final.csv')
+    data = pd.read_csv("swiggy_final.csv")
     return data
 
 df = load_data()
