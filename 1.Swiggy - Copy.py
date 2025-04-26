@@ -63,7 +63,7 @@ if cuisine:
     filtered_df = filtered_df[filtered_df['cuisine'].isin(cuisine)]
 
 # Show number of results found
-st.markdown(f"### 🍴 Found {len(filtered_df)} restaurants are waiting to serve you")
+st.markdown(f"### 🍴 {len(filtered_df)} restaurants are waiting to serve you")
 
 # Recommendations Section
 if not filtered_df.empty:
