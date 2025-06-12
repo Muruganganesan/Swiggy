@@ -5,4 +5,4 @@ wordcloud
 matplotlib
 seaborn
 statsmodels
-sklearn
+scikit-learn
