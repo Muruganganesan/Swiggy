@@ -7,15 +7,15 @@ from sklearn.preprocessing import StandardScaler
 
 
 # Load cluster data, model and scaler
-clustered_df = pd.read_csv(r"C:\Users\admin\Music\Guvi\Swiggy\clustered_data.csv")
+clustered_df = pd.read_csv("clustered_data.csv")
 
-with open(r"C:\Users\admin\Music\Guvi\Swiggy\kmeans_model.pkl", "rb") as f:
+with open("kmeans_model.pkl", "rb") as f:
     kmeans = pickle.load(f)
-with open(r"C:\Users\admin\Music\Guvi\Swiggy\scaler.pkl", "rb") as f:
+with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
-with open(r"C:\Users\admin\Music\Guvi\Swiggy\encoder.pkl", "rb") as f:
+with open("encoder.pkl", "rb") as f:
     encoder = pickle.load(f)   
-with open(r"C:\Users\admin\Music\Guvi\Swiggy\scaler_features.pkl", "rb") as f:
+with open("scaler_features.pkl", "rb") as f:
     feature_names = pickle.load(f)
 
 st.set_page_config(page_title="📊 KMeans Restaurant Recommender", layout="wide")
