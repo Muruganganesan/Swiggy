@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. Dataset ஐ Load செய்யவும்
-df = pd.read_csv(r"C:\Users\admin\Music\Guvi\Swiggy\swiggy full data.csv") 
+df = pd.read_csv("swiggy full data.csv") 
 
 # 2. Remove duplicate rows
 df = df.drop_duplicates()
