@@ -4,8 +4,8 @@ import pickle
 from sklearn.metrics.pairwise import cosine_similarity
 
 # === Load cleaned data ===
-cleaned_df = pd.read_csv(r"C:\Users\admin\Music\Guvi\Swiggy\cleaned_data.csv")
-encoded_df = pd.read_csv(r"C:\Users\admin\Music\Guvi\Swiggy\encoded_data.csv")
+cleaned_df = pd.read_csv("cleaned_data.csv")
+encoded_df = pd.read_csv("encoded_data.csv")
 
 # Load encoder
 with open(r"C:\Users\admin\Music\Guvi\Swiggy\encoder.pkl", "rb") as f:
