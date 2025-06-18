@@ -18,7 +18,7 @@ with open("encoder.pkl", "rb") as f:
 with open("scaler_features.pkl", "rb") as f:
     feature_names = pickle.load(f)
 
-st.set_page_config(page_title="📊 KMeans Restaurant Recommender", layout="wide")
+st.set_page_config(page_title="📊 Restaurant Recommender", layout="wide")
 
 st.title("🍽️ Swiggy Restaurant Recommendation System")
 
@@ -69,5 +69,5 @@ if st.sidebar.button("Get Recommendations"):
         else:
             results = results.head(5)
 
-        st.subheader("📊 Recommended Restaurants (KMeans)")
+        st.subheader("📊 Recommended Restaurants")
         st.dataframe(results[['name', 'city', 'cuisine', 'rating', 'rating_count', 'cost']])
